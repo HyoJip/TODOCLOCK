@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Clock</title>
+    <link rel="stylesheet" type="text/css" href="clock.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cover">
+        <div class="clock_wrapper">
+            <div class="js-clock clock">
+                <h1>00:00</h1>
+                <p class="greeting">No Pain, No gain</p>
+                <p class="username"></p>
+            </div>
+        </div>
+        <div class="form_wrapper">
+            <form class="js-form form">
+                <div class="group">      
+                    <input type="text">
+                    <label>Name</label>
+                </div>
+            </form>
+            <form class="js-toDoForm">
+                <div class="group">      
+                    <input type="text">
+                    <label> + To do</label>
+                </div>
+            </form>
+            <ul class="js-toDoList">
+            </ul>
+            <span class="js-weather"></span>
+        </div>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
+    </div>
+</body>
+</html>
