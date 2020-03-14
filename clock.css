@@ -18,6 +18,8 @@ body {
 }
 ul {
     list-style-type: none;
+    padding: 0;
+    font-size: 25px;
 }
 
 .clock_wrapper {
@@ -66,6 +68,7 @@ input {
     display:block;
     width:200px;
     border:none;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 label {
@@ -76,6 +79,16 @@ label {
     pointer-events:none;
     left:5px;
     top:7px;
+}
+
+button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
 .form, .fade {

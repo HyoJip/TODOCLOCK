@@ -29,14 +29,20 @@ function paintToDo(text) {
     const span = document.createElement("span");
     const newId = toDos.length + 1;
     delBtn.innerText = "X";
-    delBtn.addEventListener("click", deleteToDo)
+    delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
+    span.addEventListener("mouseover", function() {
+        delBtn.style.display = "inline";
+    });
+    li.addEventListener("mouseleave", function() {
+        delBtn.style.display = "none"
+    });
     li.appendChild(span);
     li.appendChild(delBtn);
     li.id = newId;
     toDoList.appendChild(li);
     const toDoObj = {
-        text : text,
+        text,
         id : newId
     };
     toDos.push(toDoObj);
